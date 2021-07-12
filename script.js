@@ -1,11 +1,11 @@
 "use strict";
 
 const Player = (symbol) => {
-    let _symbol = symbol;
+    const _symbol = symbol;
     const getSymbol = () => _symbol;
     return {
         getSymbol,
-    }
+    };
 };
 
 const gameBoard = (() => {
