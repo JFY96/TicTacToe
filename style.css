@@ -1,6 +1,8 @@
 :root {
     --dark-color: #393b45;
     --hover-color: lavender;
+    --win-color: lightgrey;
+
     --square-border: 4px solid var(--dark-color);
     --square-size: 100px;
     --fonts: sans-serif;
@@ -36,7 +38,11 @@ main {
     user-select: none;
 }
 
-.square:hover {
+.winningSquare {
+    background-color: var(--win-color);
+}
+
+.square:not(.winningSquare):hover {
     background-color:var(--hover-color);
 }
 
@@ -72,3 +78,4 @@ main {
     font-size: 1em;
     font-weight: 600;
 }
+
